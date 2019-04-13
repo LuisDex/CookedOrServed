@@ -1,0 +1,210 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ nav ul a,
+ nav .brand-logo {
+   color: #444;
+ }
+ 
+ 
+ /* .nav-wrapper {
+   background-color: lightskyblue
+ } */
+ 
+ 
+ .bk-grey {
+   /* background-color: dimgrey; */
+   border-style: solid;
+ }
+ 
+ .brdsolid {border-style: solid, black, 2px}
+ 
+ .mrt {margin-top: 25px;}
+ 
+ .m10 {margin: 10px}
+ 
+ .mrl {margin-left: 10px;}
+ 
+ 
+ .sidenav-trigger {
+   color: #26a69a;
+ }
+ 
+ .parallax-container {
+   /* min-height: 380px; */
+   /* max-height: 380px; */
+   line-height: 0;
+   height: auto;
+   color: rgba(255,255,255,.9);
+ }
+   .parallax-container .section {
+     width: 100%;
+   }
+ 
+ @media only screen and (max-width : 992px) {
+   .parallax-container .section {
+     position: absolute;
+     top: 100%;
+   }
+   #index-banner .section {
+     top: 0%;
+   }
+   .mrt20 {margin-top: 100px}
+ }
+ 
+ @media only screen and (max-width : 600px) {
+   #index-banner .section {
+     top: 0;
+   }
+   .mrt20 {margin-top: 100px}
+ }
+ 
+ .width100 {
+   width:100%;
+ }
+ .icon-block {
+   padding: 0 15px;
+ }
+ .icon-block .material-icons {
+   font-size: inherit;
+ }
+ 
+ footer.page-footer {
+   margin: 0;
+ }
+ 
+ h1 {
+   text-shadow: 2px 2px black;
+   color: white;
+ }
+ 
+ h6 {text-shadow: 1px 1px black;
+     color: white;
+ }
+ 
+ 
+ .shdowone {
+   text-shadow: 1px 1px black
+ }
+ 
+ .ctr { overflow: hidden}
+ 
+ .whitefont {color: white;
+   font-size: 16px;
+   text-transform: capitalize;
+ }
+ 
+ 
+ label {color:white;
+ font-size: 14px;
+ text-shadow: 1px 1px black;}
+ 
+ .card .card-image .card-title {
+   color: rgb(0, 0, 0);
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   max-width: 100%;
+   padding: 24px;
+   text-shadow: 1px 1px #fff;
+ }
+ 
+ body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+footer {
+  flex: 1 0 auto;
+}
+    
+    
+ 
+ .height50 {height: 60px;
+   width: auto}
+ 
+ .minheight700 {
+     min-height: 700px;
+   }
+ 
+ .center { align-content: center}
+ 
+ #opac5 {  opacity: 0.3;
+   filter: alpha(opacity=30) }
+ 
+ .edamam {
+   height: 250px;
+   width: 250px;
+ }
+ 
+ .mrb5 { margin-top: 20px;
+ }
+ 
+ .pd10 { padding-left: 10px;
+     padding-right: 10px;
+   padding-top: 0px;
+   padding-bottom: 15px;
+ 
+ }
+ 
+ .fHeight { height: 550px;
+   /* overflow-y: scroll; */
+ }
+ 
+ p { margin-top: 0px;
+   margin-bottom: 5px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   font-family: 'Merriweather', serif;
+   font-size: 12px;
+ }
+ 
+ .card-title {
+   font-size: 20px;
+   font-family: 'Merriweather', serif;
+ }
+
+ .pdb20 {
+   padding-bottom: 20px;
+ }
+
+ .mrtZero {
+   margin-top: 0px;
+ }
+
+ .nic {
+  font-family: 'Niconne', cursive;
+ }
+
+ .vt {
+  font-family: 'VT323', monospace;
+ }
+
+ .pdTop {
+   padding-top: 10px;
+ }
+
+ .mrb0 {margin-bottom: 0px;}
+
+ li {margin-top: 0px;
+  margin-bottom: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: 'Merriweather', serif;
+  font-size: 12px;
+ }
+
+ .liHeight { height: 250px;
+
+ }
+
+ .footerStart {position: absolute;
+  bottom: 0; 
+width: 100%;}
+

@@ -1,0 +1,102 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+body {background-image: url("../Images/tapes.jpg")
+}
+
+/* .nav-wrapper {
+  background-color: lightskyblue
+} */
+
+p {
+  line-height: 2rem;
+}
+.mrt {margin-top: 25px;}
+
+.m10 {margin: 10px}
+
+.mrl {margin-left: 10px;}
+
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.width100 {
+  width:100%;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+h1 {
+  text-shadow: 2px 2px black;
+  color: white;
+}
+
+h6 {text-shadow: 1px 1px black;
+    color: white;
+}
+
+
+.shdowone {
+  text-shadow: 1px 1px black
+}
+
+.ctr { overflow: hidden}
+
+.whitefont {color: white;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+
+label {color:white;
+font-size: 14px;
+text-shadow: 1px 1px black;}
+
+
+

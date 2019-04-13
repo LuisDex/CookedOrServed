@@ -1,0 +1,177 @@
+<DOCTYPE html>
+    <title>
+        Cooked or Served
+    </title>
+
+    <head>
+        <!-- Google fonts pull -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Materialize CSS pull -->
+        <link href="Assets/CSS/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <!-- My CSS pull -->
+        <link href="Assets/CSS/styles.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script> -->
+        <script src="app.js"></script>
+        <!-- Niconne Font -->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Niconne|VT323" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-wrapper grey lighten-1">
+                <h5 class="center mrtZero vt pdTop">a manDown Production</h5>
+            </div>
+        </nav>
+        <div id="index-banner" class="parallax-container">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l12 s12 m12 center">
+                            <br><br>
+                            <h1 class="header center white-text text-darken-2 nic">What would you like to eat?</h1>
+                            <br><br>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="parallax"><img src="Assets/Images/pexels-photo-1565982.jpg" alt="Unsplashed background img 1">
+            </div>
+            <div class="row">
+
+            </div>
+            <div class="row">
+
+            </div>
+            <div class="row">
+
+            </div>
+            <div class="row">
+
+            </div>
+            <div class="row">
+                <div class="col l12 m12 s12 mrt20">
+                    <div class="container center">
+                        <button id="foodD" class="waves-effect waves-light grey dark-1 btn-large" value="food"><i class="material-icons left">local_dining</i>Dine
+                            in</button>
+
+                        <button id="pickUp" class="waves-effect waves-light grey dark-1 btn-large" value="other"><i
+                                class="material-icons left">drive_eta</i>Pick
+                            Something Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l12  m12  s12">
+                <div class="card z-depth-5 pdTop" id="functioningCard">
+                    <h3 class="center nic" id="using">What would you like to use?</h3>
+                    <div class="card-content center">
+                        <div class="row mrb0" id="foodInputs">
+                            <form class="col s3 offset-s3 mrb0">
+                                <div class="input-field">
+                                    <textarea id="include" class="materialize-textarea"></textarea>
+                                    <label for="include">Include the following ingredients:</label>
+                                </div>
+                            </form>
+                            <form class="col s3">
+                                <div class="input-field mrb0">
+                                    <textarea id="exclude" class="materialize-textarea"></textarea>
+                                    <label for="exclude">Exclude the following ingredients</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="foodInputsSubmit">
+                            <button id="submit" class="btn waves-effect grey dark-1 waves-light btn-med pulse" type="submit"
+                                name="action">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+
+                        </div>
+                        <div class="row" id="restaraunt">
+                            <h3 class="center nic" id="going">What kind of food would you like to eat?</h3>
+                            <div class="input-field col s3 offset-s3 mrb0" data-target="dropDown">
+                                <select id="dropDown">
+                                    <option value="1">American</option>
+                                    <option value="73">Mexican</option>
+                                    <option value="60">Japanese Food</option>
+                                    <option value="55">Italian Food</option>
+                                    <option value="25">Chinese Food</option>
+                                    <option value="153">Cuban Food</option>
+                                    <option value="928">Haitian Food</option>
+                                    <option value="83">Seafood</option>
+                                    <option value="95">Thai Food</option>
+                                </select>
+                                <label>Pick a type of cuisine.</label>
+                            </div>
+                            <div class="input-field col s3 mrb0">
+                                <textarea id="cityName" class="materialize-textarea"></textarea>
+                                <label for="cityName">What city would you like to eat in?</label>
+                            </div>
+                        </div>
+                        <div id="pickUpSubmit">
+                            <button class="btn waves-effect waves-light grey dark-1 submitTer pulse" id="submitTer"
+                                type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="instructions">
+            <div class="col s12 m12 l12">
+                <span class="card-title center">
+                    <h3 class="center nic">Ingredient List Below:</h3>
+                </span>
+                <span class="card-title center">
+                    <h4 class="center pd10 nic">Click an image to link to the recipe.</h4>
+                </span>
+            </div>
+        </div>
+        </div>
+        <div class="row center" id="recipeList">
+
+        </div>
+        <div class="row center" id="recipeList2">
+
+        </div>
+        <div class="row center" id="recipeList3">
+
+        </div>
+        <footer class="page-footer footerStart grey darken-5">
+            <div class="container center">
+                <div class="row">
+                    <div class="col l12 s12">
+                        <img class="brand-logo height50 center" src="Assets/Images/manDown.png">
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright grey darken-1">
+                <div class="container center vt">
+                    © manDown production 2019
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- <div class="col l4 m4 s4">
+                    <h1> generic placeholder text left container</h1>
+                </div> -->
+        <!-- Jquery library pull -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Materialize javascript pull -->
+        <script src="Assets/Javascript/materialize.js"></script>
+        <!-- 2nd Materialize javascript pull -->
+        <script src="Assets/Javascript/init.js"></script>
+        <!-- My Javascript pull -->
+        <!-- <script src="Assets/Javascript/logic.js"></script> -->
+        <!-- Firebase pull -->
+        <!-- <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script> -->
+    </body>
+</DOCTYPE>
